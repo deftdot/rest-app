@@ -76,13 +76,13 @@ def search():
 
 @app.route('/health')
 def health_check():
-    return "OK, v1.18", 200
+    return "OK", 200
 
 
 @app.route('/audit', methods=['GET'])
 @auth.login_required
 def get_audit_logs():
-    max_last_records = int(request.args.get('maxLastRecords', '5'))  # Default to 10 if not specified
+    max_last_records = int(request.args.get('maxLastRecords', '5'))  # Default to 5 if not specified
     audit_table = dynamodb.Table('audit')
     response = audit_table.scan(
         Limit=max_last_records
