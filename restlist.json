@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Pizza Hut",
+        "style": "Italian",
+        "address": "Wherever Street 99, Somewhere",
+        "openHour": "09:00",
+        "closeHour": "23:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Sakura Sushi",
+        "style": "Japanese",
+        "address": "Cherry Blossom Rd 45, Tokyo Town",
+        "openHour": "11:00",
+        "closeHour": "22:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Curry Palace",
+        "style": "Indian",
+        "address": "Spice Lane 12, Delhi District",
+        "openHour": "10:00",
+        "closeHour": "21:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Taco Fiesta",
+        "style": "Mexican",
+        "address": "Sol Street 88, Mexico City",
+        "openHour": "10:00",
+        "closeHour": "20:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Burger Town",
+        "style": "American",
+        "address": "Freedom Blvd 101, New York",
+        "openHour": "08:00",
+        "closeHour": "00:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Le Gourmet",
+        "style": "French",
+        "address": "Elegance Ave 56, Paris",
+        "openHour": "12:00",
+        "closeHour": "23:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Dragon Wok",
+        "style": "Chinese",
+        "address": "Lotus Street 33, Beijing",
+        "openHour": "10:00",
+        "closeHour": "22:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Little Seoul",
+        "style": "Korean",
+        "address": "Kimchi Rd 19, Seoul City",
+        "openHour": "09:00",
+        "closeHour": "21:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Veggie Delight",
+        "style": "Vegetarian",
+        "address": "Green Lane 27, Healthy Town",
+        "openHour": "08:00",
+        "closeHour": "20:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Arabian Nights",
+        "style": "Middle-Eastern",
+        "address": "Desert Blvd 48, Oasis City",
+        "openHour": "12:00",
+        "closeHour": "00:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Ocean's Catch",
+        "style": "Seafood",
+        "address": "Marina Way 52, Coastal Line",
+        "openHour": "11:00",
+        "closeHour": "22:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Steak Master",
+        "style": "Grill",
+        "address": "Grill Ave 30, Texas Town",
+        "openHour": "12:00",
+        "closeHour": "23:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Greenhouse Cafe",
+        "style": "Cafe",
+        "address": "Nature St 77, Eco Village",
+        "openHour": "07:00",
+        "closeHour": "19:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Tapas Bar",
+        "style": "Spanish",
+        "address": "Fiesta Rd 66, Barcelona",
+        "openHour": "13:00",
+        "closeHour": "01:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Berlin Schnitzelhaus",
+        "style": "German",
+        "address": "Beer Street 89, Berlin",
+        "openHour": "10:00",
+        "closeHour": "22:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Ethiopian Eats",
+        "style": "Ethiopian",
+        "address": "Addis Ave 21, Ethiopia Town",
+        "openHour": "09:00",
+        "closeHour": "21:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Mediterranean Marvel",
+        "style": "Mediterranean",
+        "address": "Olive Street 59, Coast City",
+        "openHour": "11:00",
+        "closeHour": "23:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Bangkok Street Food",
+        "style": "Thai",
+        "address": "Spicy Rd 34, Bangkok",
+        "openHour": "10:00",
+        "closeHour": "20:00",
+        "vegetarian": false
+    },
+    {
+        "name": "London Fish & Chips",
+        "style": "British",
+        "address": "Queen's Road 73, London",
+        "openHour": "10:00",
+        "closeHour": "21:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Rio Churrascaria",
+        "style": "Brazilian",
+        "address": "Carnival Street 90, Rio de Janeiro",
+        "openHour": "12:00",
+        "closeHour": "00:00",
+        "vegetarian": false
+    },
+    {
+        "name": "Beer La tree",
+        "style": "Mediterranean",
+        "address": "LaLa Street 7, Holon",
+        "openHour": "14:00",
+        "closeHour": "21:00",
+        "vegetarian": true
+    },
+    {
+        "name": "Tata lapapa",
+        "style": "Brazilian",
+        "address": "Plaza Street 444",
+        "openHour": "16:00",
+        "closeHour": "00:00",
+        "vegetarian": true
+    }
+]
