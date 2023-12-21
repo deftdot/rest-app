@@ -5,7 +5,6 @@ yum install -y python3
 cat <<'EOF' > /usr/local/bin/startup-script.sh
 #!/bin/bash
 export AWS_DEFAULT_REGION='us-east-1'
-export AUDIT_PASSWORD=$(aws ssm get-parameter --name "audit_secret" --with-decryption --query "Parameter.Value" --output text)
 aws s3 cp s3://rest-app-bucket-01/main.py .
 aws s3 cp s3://rest-app-bucket-01/db_load.py .
 aws s3 cp s3://rest-app-bucket-01/restlist.json .

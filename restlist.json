@@ -174,5 +174,23 @@
         "openHour": "16:00",
         "closeHour": "00:00",
         "vegetarian": true
-    }
+    },
+    {"name": "Russian Restaurant 45", "style": "Russian", "address": "Pine Street 47, Greenville", "openHour": "09:00", "closeHour": "20:00", "vegetarian": false},
+    {"name": "Greek Restaurant 70", "style": "Greek", "address": "Main Street 96, Fairview", "openHour": "08:00", "closeHour": "20:00", "vegetarian": true},
+    {"name": "Russian Restaurant 42", "style": "Russian", "address": "Pine Street 24, Riverside", "openHour": "11:00", "closeHour": "23:00", "vegetarian": true},
+    {"name": "Russian Restaurant 94", "style": "Russian", "address": "Pine Street 39, Springfield", "openHour": "06:00", "closeHour": "19:00", "vegetarian": false},
+    {"name": "Russian Restaurant 42", "style": "Russian", "address": "Center Street 9, Midtown", "openHour": "11:00", "closeHour": "21:00", "vegetarian": false},
+    {"name": "Vietnamese Restaurant 57", "style": "Vietnamese", "address": "Oak Street 49, Midtown", "openHour": "10:00", "closeHour": "23:00", "vegetarian": false},
+    {"name": "Vietnamese Restaurant 77", "style": "Vietnamese", "address": "Market Street 76, Riverside", "openHour": "11:00", "closeHour": "23:00", "vegetarian": true},
+    {"name": "Russian Restaurant 12", "style": "Russian", "address": "River Street 36, Fairview", "openHour": "07:00", "closeHour": "22:00", "vegetarian": false},
+    {"name": "Peruvian Restaurant 46", "style": "Peruvian", "address": "Oak Street 69, Midtown", "openHour": "11:00", "closeHour": "22:00", "vegetarian": false},
+    {"name": "Russian Restaurant 37", "style": "Russian", "address": "Market Street 75, Greenville", "openHour": "08:00", "closeHour": "22:00", "vegetarian": true},
+    {"name": "Turkish Restaurant 46", "style": "Turkish", "address": "Center Street 96, Fairview", "openHour": "07:00", "closeHour": "18:00", "vegetarian": false},
+    {"name": "Peruvian Restaurant 11", "style": "Peruvian", "address": "Market Street 15, Riverside", "openHour": "06:00", "closeHour": "18:00", "vegetarian": false},
+    {"name": "Caribbean Restaurant 44", "style": "Caribbean", "address": "Broadway Street 21, Midtown", "openHour": "10:00", "closeHour": "23:00", "vegetarian": true},
+    {"name": "Vietnamese Restaurant 27", "style": "Vietnamese", "address": "Market Street 83, Fairview", "openHour": "09:00", "closeHour": "20:00", "vegetarian": false},
+    {"name": "African Restaurant 61", "style": "African", "address": "Broadway Street 15, Greenville", "openHour": "08:00", "closeHour": "19:00", "vegetarian": false},
+    {"name": "Moroccan Restaurant 64", "style": "Moroccan", "address": "Oak Street 57, Springfield", "openHour": "06:00", "closeHour": "20:00", "vegetarian": false},
+    {"name": "Peruvian Restaurant 8", "style": "Peruvian", "address": "Main Street 57, Greenville", "openHour": "07:00", "closeHour": "20:00", "vegetarian": false},
+    {"name": "African Restaurant 100", "style": "African", "address": "Main Street 57, Greenville", "openHour": "06:00", "closeHour": "22:00", "vegetarian": true}
 ]

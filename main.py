@@ -10,7 +10,6 @@ import pytz
 
 app = Flask(__name__)
 auth = HTTPBasicAuth()
-AUDIT_PASSWORD = os.environ.get('AUDIT_PASSWORD', 'defaultpassword')
 
 @auth.verify_password
 def verify_password(username, password):
@@ -34,6 +33,20 @@ def is_open(restaurant, current_time):
             return True
     return False
 
+def get_audit_password():
+    session = boto3.Session()
+    ssm = session.client('ssm')
+    try:
+        response = ssm.get_parameter(
+            Name='audit_secret',
+            WithDecryption=True
+        )
+        return response['Parameter']['Value']
+    except Exception as e:
+        print(f"Error fetching parameter: {e}")
+        return None
+
+AUDIT_PASSWORD = get_audit_password()
 
 @app.route('/search', methods=['GET'])
 def search():
@@ -105,3 +118,4 @@ def get_audit_logs():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
+
