@@ -63,11 +63,22 @@ def search():
 
     filtered_restaurants = [restaurant for restaurant in complete_results if is_open(restaurant, current_time)]
 
+    if not filtered_restaurants:
+        next_openings = []
+        for restaurant in complete_results:
+            if not is_open(restaurant, current_time):
+                next_openings.append(f"{restaurant['name']} will open at {restaurant['openHour']}")
+        
+        message = "Sorry, there are no open restaurants currently for your search."
+        if next_openings:
+            message += " But the following restaurants will open at: " + ", ".join(next_openings)
+        return message, 200
+
     audit_data = {
-    'ActionID': str(uuid.uuid4()),
-    'ReqParams': str(request.args),
-    'Response': [restaurant['name'] for restaurant in filtered_restaurants],
-    'Time': datetime.now().isoformat()
+        'ActionID': str(uuid.uuid4()),
+        'ReqParams': str(request.args),
+        'Response': [restaurant['name'] for restaurant in filtered_restaurants],
+        'Time': datetime.now().isoformat()
     }
     audit_table = dynamodb.Table('audit')
     audit_table.put_item(Item=audit_data)
