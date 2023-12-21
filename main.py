@@ -5,6 +5,8 @@ from flask_httpauth import HTTPBasicAuth
 import os
 from boto3.dynamodb.conditions import Key, Attr
 from datetime import datetime
+import pytz
+
 
 app = Flask(__name__)
 auth = HTTPBasicAuth()
@@ -35,7 +37,8 @@ def is_open(restaurant, current_time):
 
 @app.route('/search', methods=['GET'])
 def search():
-    current_time = datetime.now()
+    tz = pytz.timezone('Israel')
+    current_time = datetime.now(tz)  # Current time in Israeli time zone
     style = request.args.get('style')
     is_vegetarian = request.args.get('isVegetarian')
 
@@ -78,7 +81,7 @@ def search():
         'ActionID': str(uuid.uuid4()),
         'ReqParams': str(request.args),
         'Response': [restaurant['name'] for restaurant in filtered_restaurants],
-        'Time': datetime.now().isoformat()
+        'Time': datetime.now(tz).isoformat()
     }
     audit_table = dynamodb.Table('audit')
     audit_table.put_item(Item=audit_data)
